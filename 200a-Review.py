@@ -58,8 +58,12 @@ def main():
     easy2 = [-2,-4,-6,2,4,6,0.1]
     numbers1 = [3,5,8,12,11,19,10,7,2,15,25,34,16,32,50,60,100,-3,0.25]
     numbers2 = [3,7,11,15,19,23,27,31,35,39,44,50]
-
-
+    assert getIntegers([3,4,1.2,1.3,5]) == [3,4,5]
+    assert getFactor(range(10),12) == [1,2,3,4,6]
+    assert getNegatives([-3,-1,0,1,4]) == [-3,-1]
+    assert getUnion(easy1,easy2) == [5,10,15,2,4,6,8,-2,-4,-6,0.1]
+    assert getIntersection(easy1,easy2) == [2,4,6]
+    assert getMerge(easy1,easy) == [5,10,15,2,2,4,4,6,6,8,-2,-4,-6,0.1]
 
 if __name__ == "__main__":
     main()
